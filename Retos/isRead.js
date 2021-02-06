@@ -24,3 +24,6 @@ const isRead = (book) => {
   if (book.read) return `Ya has leido el ${book.title} de ${book.author}`
   return `Aun necesitas leer ${book.title} de ${book.author}`
 }
+for (let i = 0; i < myCollection.books.length; i++) {
+  console.log(isRead(myCollection.books[i]))
+}
