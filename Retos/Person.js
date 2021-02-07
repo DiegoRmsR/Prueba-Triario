@@ -30,9 +30,21 @@ class Person {
     this.rfc = RFC
     return RFC
   }
+  /**
+  * method that verifies if is legal age
+  */
+  esMayorDeEdad() {
+    if (this.edad >= 18) {
+      return true;
+    }
+    return false;
+  }
 }
 const IMC = new Person("diego andres ramos ruiz", 20, "M", 68, 1.70).calcularIMC()
 console.log(IMC);
 
 const esMayorDeEdad = new Person("diego andres ramos ruiz", 20, "M", 68, 1.70).esMayorDeEdad()
 console.log(esMayorDeEdad);
+
+const RFC = new Person("diego andres ramos ruiz", 20, "M", 68, 1.70).obtenerRFC()
+console.log(RFC);
