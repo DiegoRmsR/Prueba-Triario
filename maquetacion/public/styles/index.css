@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Navbar container */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  overflow: hidden;
+  font-family: Arial;
+}
+/* Add a black background color to the top navigation */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: #000;
+  opacity: 0.9;
+  padding: 25px 0;
+  display: flex;
+  color: white;
+}
+.navbar .navbar-space {
+  width: 100%;
+  padding: 0 40px;
+}
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.logo {
+  background-image: url("../assets/logo.png");
+  background-size: cover; /* Resize the background image to cover the entire container */
+  width: 350px;
+  background-position-y: -20px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 4%;
+}
+.navbar-p {
+  padding-top: 16px;
+  font-size: 20px;
+  color: rgb(127, 214, 255);
+}
+
+.navbar .navbar-logo {
+  display: flex;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  background: #000;
+  opacity: 0.9;
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background: #000;
+  opacity: 0.9;
+  color: rgb(25, 28, 212);
+}
+#link-color {
+  background-color: #046eb1;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+/* Add a color to the active/current link */
+.pricipal-image {
+  background-image: url("../assets/fonde.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 42rem; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-bottom: 3%;
+}
+.image-section {
+  background-image: url("../assets/Proyectosdevivienda.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 300px; /* You must set a specified height */
+  width: 80%;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 2%;
+  background-position-y: -70px;
+}
+
+.container-section {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+}
+.Descubre {
+  margin: 10px 24rem;
+  text-align: center;
+}
+
+.image-section-two {
+  width: 35%;
+  background-image: url("../assets/Oficinas.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 300px; /* You must set a specified height */
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  margin: 0px 10px;
+  font-family: Sentic Black;
+  padding: 2%;
+}
+
+.image-section-three {
+  width: 35%;
+  background-image: url("../assets/Localescomerciales.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 300px; /* You must set a specified height */
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 10px;
+  font-family: Sentic Black;
+  padding: 2%;
+}
+.container-section-two p,
+.container-section p {
+  font-weight: 900;
+  font-size: 12px;
+  padding-bottom: 10px;
+  background: black;
+  opacity: 0.5;
+  margin: 0 -60px -25px -22px;
+}
+
+h2 {
+  font-family: system-ui;
+  font-weight: 900;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.container-section-two {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 60%;
+}
+/* Style the search field */
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  background: #f1f1f1;
+  width: 60%;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  padding: 10px;
+  background: #2196f3;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  width: 10%;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container-search {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The dropdown container */
+.dropdown {
+  width: 30%;
+  float: left;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  width: 100%;
+}
+
+/* Add a red background color to navbar links on hover */
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
